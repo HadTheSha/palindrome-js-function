@@ -1,8 +1,7 @@
 function isPalindrome(str) {
     var strLower= str.split(" ").join("").toLowerCase();
-    var noSpaces = str.split(" ").join("");
-    var mid = Math.floor(noSpaces.length/2);
-    var last = noSpaces.length - 1;
+    var mid = Math.floor(strLower.length/2);
+    var last = strLower.length - 1;
     for (var i = 0; i < mid; i++) {
       if (strLower[i] !== strLower[last - i]) return false;
     }
